@@ -1,19 +1,23 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
-        "module": "umd",
+        "target": "ES5",
         "lib": [
-            "ESNext",
-            "dom"
+            "dom",
+            "dom.iterable",
+            "esnext"
         ],
-        "jsx": "react",
-        "noEmit": true,
+        "jsx": "react-jsx",
+        "noEmit": false,
         "sourceMap": true,
         "strict": true,
         "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
         "moduleResolution": "node",
         "forceConsistentCasingInFileNames": true,
-        "esModuleInterop": true
+        "esModuleInterop": true,
+        "baseUrl": "./src",
     },
-    "include": ["src"]
+    "include": ["src"],
+    "exclude": ["node_modules", "dist"]
 }
